@@ -1,0 +1,15 @@
+.Menu {
+  position: relative;
+}
+
+.MenuContainer {
+  margin-top: .5em;
+  padding: 1em;
+  position: absolute;
+  list-style: none;
+  width: 160px;
+  background: #FFFFFF;
+  border: 1px transparent;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.4);
+}
