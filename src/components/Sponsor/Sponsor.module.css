@@ -1,0 +1,12 @@
+.SponsorContainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.SponsorItem {
+  width: 20%;
+  flex: 0 1 20%;
+}
