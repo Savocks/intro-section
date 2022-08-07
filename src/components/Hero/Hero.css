@@ -33,11 +33,13 @@
     text-align: unset;
     height: calc(100vh - var(--header-height-desktop));
   }
+
   .hero__image {
     flex: 0 0 40%;
     width: 40%;
     height: 100%;
   }
+
   .hero__content {
     flex: 0 0 60%;
     width: 60%;
@@ -47,6 +49,7 @@
     justify-content: flex-end;
     padding: 0 4em;
   }
+
   .hero__title {
     font-size: 5em;
   }

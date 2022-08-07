@@ -1,6 +1,6 @@
 import buttonStyles from './Buttons.module.css';
 import classNames from "classnames";
-import {ButtonHTMLAttributes, MouseEventHandler, RefAttributes} from "react";
+import {ButtonHTMLAttributes} from "react";
 
 export function PrimaryButton(props: ButtonProps) {
   const buttonClasses = classNames(buttonStyles.PrimaryButton, props.className)
@@ -65,7 +65,7 @@ export function IconButton(props: IconButtonProps) {
     <button
       className={buttonStyles.MenuButton}>
       <div className={buttonStyles.MenuButtonIcon}>
-        <img src={props.iconUrl} alt={props.iconAlt}  />
+        <img src={props.iconUrl} alt={props.iconAlt}/>
       </div>
       <div className={buttonStyles.MenuButtonText}>
         {props.text}

@@ -27,7 +27,8 @@ const sponsorList: Sponsor[] = [
 export function SponsorContainer() {
   return (
     <div className={styles.SponsorContainer}>
-      { sponsorList.map(({imageAlt, imageUrl}: Sponsor) => (<SponsorItem key={imageAlt} imageUrl={imageUrl} imageAlt={imageAlt}/>))}
+      {sponsorList.map(({imageAlt, imageUrl}: Sponsor) => (
+        <SponsorItem key={imageAlt} imageUrl={imageUrl} imageAlt={imageAlt}/>))}
     </div>
   )
 }

@@ -7,14 +7,13 @@ import arrowDown from '../../assets/images/icon-arrow-down.svg';
 import arrowUp from '../../assets/images/icon-arrow-up.svg'
 
 
-
 export function Menu(props: MenuProps) {
   const [hover, setHover] = useState(false);
 
   return (
     <div className={styles.Menu}
          onMouseOverCapture={() => setHover(true)}
-         >
+    >
       <TertiaryButton
         id={props.id}
         name={props.name}
@@ -22,16 +21,16 @@ export function Menu(props: MenuProps) {
         text={props.text}
       />
       <span>
-        { !hover && <img src={arrowDown} alt="Closed Menu Arrow down"/> }
-        { hover &&  <img src={arrowUp} alt="Closed Menu Arrow down"/> }
+        {!hover && <img src={arrowDown} alt="Closed Menu Arrow down"/>}
+        {hover && <img src={arrowUp} alt="Closed Menu Arrow down"/>}
       </span>
-      { props.menuItemList && props.menuItemList.length > 0 && hover && (
+      {props.menuItemList && props.menuItemList.length > 0 && hover && (
         <div className={styles.MenuContainer}
              onMouseOutCapture={() => setHover(false)}
         >
-          { props.menuItemList.map((menuItem) => (
+          {props.menuItemList.map((menuItem) => (
             menuItem?.icon ?
-              <IconButton key={menuItem.text} text={menuItem.text} iconAlt={menuItem.text} iconUrl={menuItem.icon} /> :
+              <IconButton key={menuItem.text} text={menuItem.text} iconAlt={menuItem.text} iconUrl={menuItem.icon}/> :
               <TertiaryButton id={menuItem.text} text={menuItem.text} type="button" name={menuItem.text}/>
           ))}
         </div>
